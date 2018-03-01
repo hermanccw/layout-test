@@ -1,0 +1,43 @@
+<UIView backgroundColor="white">
+  <UITableView
+    rowHeight="44"
+    contentInset.bottom="safeAreaInsets.bottom"
+    contentInset.top="safeAreaInsets.top"
+    contentInsetAdjustmentBehavior="never"
+    contentOffset.y="-safeAreaInsets.top"
+    outlet="tableView"
+    scrollIndicatorInsets.bottom="safeAreaInsets.bottom"
+    scrollIndicatorInsets.top="safeAreaInsets.top"
+    style="plain">
+    
+    <!-- Table cell template -->
+    <UITableViewCell reuseIdentifier="supporterCell">
+      <UIView
+        left="10"
+        
+        height="parent.height"
+        width="parent.width - 20"
+        backgroundColor="green"
+        >
+        <UILabel
+        height="parent.height"
+        text="{name}"
+        width="80%"
+        />
+        <UIButton
+        bottom="parent.height - 5"
+        layer.borderColor="lightGray"
+        layer.borderWidth="1"
+        title="+ Add"
+        titleColor="darkGray"
+        top="5"
+        left="previous.right + 10"
+        width="20% - 10"
+        
+        backgroundColor="blue"
+        />
+      </UIView>
+    </UITableViewCell>
+  </UITableView>
+</UIView>
+

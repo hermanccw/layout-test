@@ -7,21 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C62AB1892046E92E00927715 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62AB1882046E92E00927715 /* ApplicationViewController.swift */; };
+		C62AB18B2046E9A700927715 /* UIViewController+SimpleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62AB18A2046E9A700927715 /* UIViewController+SimpleTransition.swift */; };
 		C6550B5B2046805600059587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6550B5A2046805600059587 /* AppDelegate.swift */; };
 		C6550B5D2046805600059587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6550B5C2046805600059587 /* ViewController.swift */; };
-		C6550B602046805600059587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6550B5E2046805600059587 /* Main.storyboard */; };
 		C6550B622046805600059587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6550B612046805600059587 /* Assets.xcassets */; };
 		C6550B652046805600059587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6550B632046805600059587 /* LaunchScreen.storyboard */; };
+		C6550B6E204681F500059587 /* Layout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6550B6C204681F400059587 /* Layout.framework */; };
+		C6550B6F204681F500059587 /* Layout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C6550B6C204681F400059587 /* Layout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6550B76204683D000059587 /* VC.xml in Resources */ = {isa = PBXBuildFile; fileRef = C6550B75204683D000059587 /* VC.xml */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C6550B70204681F500059587 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6550B6F204681F500059587 /* Layout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C62AB1882046E92E00927715 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		C62AB18A2046E9A700927715 /* UIViewController+SimpleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SimpleTransition.swift"; sourceTree = "<group>"; };
 		C6550B572046805600059587 /* LayoutTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6550B5A2046805600059587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6550B5C2046805600059587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C6550B5F2046805600059587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6550B612046805600059587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6550B642046805600059587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6550B662046805600059587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6550B6C204681F400059587 /* Layout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Layout.framework; path = Carthage/Build/iOS/Layout.framework; sourceTree = "<group>"; };
+		C6550B75204683D000059587 /* VC.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VC.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6550B6E204681F500059587 /* Layout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +60,7 @@
 		C6550B4E2046805600059587 = {
 			isa = PBXGroup;
 			children = (
+				C6550B6C204681F400059587 /* Layout.framework */,
 				C6550B592046805600059587 /* LayoutTest */,
 				C6550B582046805600059587 /* Products */,
 			);
@@ -56,10 +79,12 @@
 			children = (
 				C6550B5A2046805600059587 /* AppDelegate.swift */,
 				C6550B5C2046805600059587 /* ViewController.swift */,
-				C6550B5E2046805600059587 /* Main.storyboard */,
 				C6550B612046805600059587 /* Assets.xcassets */,
 				C6550B632046805600059587 /* LaunchScreen.storyboard */,
 				C6550B662046805600059587 /* Info.plist */,
+				C6550B75204683D000059587 /* VC.xml */,
+				C62AB1882046E92E00927715 /* ApplicationViewController.swift */,
+				C62AB18A2046E9A700927715 /* UIViewController+SimpleTransition.swift */,
 			);
 			path = LayoutTest;
 			sourceTree = "<group>";
@@ -74,6 +99,8 @@
 				C6550B532046805600059587 /* Sources */,
 				C6550B542046805600059587 /* Frameworks */,
 				C6550B552046805600059587 /* Resources */,
+				C6550B70204681F500059587 /* Embed Frameworks */,
+				C6550B742046835100059587 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -123,13 +150,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6550B76204683D000059587 /* VC.xml in Resources */,
 				C6550B652046805600059587 /* LaunchScreen.storyboard in Resources */,
 				C6550B622046805600059587 /* Assets.xcassets in Resources */,
-				C6550B602046805600059587 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6550B742046835100059587 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Layout.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Layout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6550B532046805600059587 /* Sources */ = {
@@ -138,20 +183,14 @@
 			files = (
 				C6550B5D2046805600059587 /* ViewController.swift in Sources */,
 				C6550B5B2046805600059587 /* AppDelegate.swift in Sources */,
+				C62AB1892046E92E00927715 /* ApplicationViewController.swift in Sources */,
+				C62AB18B2046E9A700927715 /* UIViewController+SimpleTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C6550B5E2046805600059587 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6550B5F2046805600059587 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C6550B632046805600059587 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -275,6 +314,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LayoutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.LayoutTest;
@@ -289,6 +332,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LayoutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.LayoutTest;

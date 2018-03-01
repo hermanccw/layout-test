@@ -1,0 +1,53 @@
+<TableViewController backgroundColor="white">
+    <UITableView
+        backgroundColor="tintColor"
+        contentInset.bottom="safeAreaInsets.bottom"
+        contentInset.top="safeAreaInsets.top"
+        contentInsetAdjustmentBehavior="never"
+        contentOffset.y="-safeAreaInsets.top"
+        estimatedSectionHeaderHeight="20"
+        outlet="tableView"
+        scrollIndicatorInsets.bottom="safeAreaInsets.bottom"
+        scrollIndicatorInsets.top="safeAreaInsets.top"
+        style="plain">
+
+        <!-- Table header -->
+        <UIView height="auto + 10">
+            <UILabel
+                text="~ A custom table header view ~"
+                textAlignment="center"
+                textColor="white"
+                top="10"
+                width="100%"
+            />
+        </UIView>
+
+        <!-- Section header template -->
+        <UITableViewHeaderFooterView
+            backgroundView.backgroundColor="rgba(255, 255, 255, 0.75)"
+            height="auto + 10"
+            reuseIdentifier="templateHeader"
+            textLabel.text="Section header defined as a template in Table.xml"
+        />
+
+        <!-- Table cell template -->
+        <UITableViewCell
+            detailTextLabel.highlightedTextColor="#fff7"
+            detailTextLabel.text="This cell is defined as a template in Table.xml"
+            detailTextLabel.textColor="#aaa"
+            height="auto + 20"
+            reuseIdentifier="templateCell"
+            selectedBackgroundView.backgroundColor="tintColor"
+            style="subtitle"
+            textLabel.highlightedTextColor="white"
+            textLabel.text="Title #{row}">
+
+            <UIImageView
+                highlightedImage="{whiteImage}"
+                image="{image}"
+                right="100% - 20"
+                top="20"
+            />
+        </UITableViewCell>
+    </UITableView>
+</TableViewController>

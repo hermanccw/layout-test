@@ -1,0 +1,17 @@
+<UIView
+    height="100% - 20"
+    layer.cornerRadius="10"
+    left="20"
+    width="100% - 40">
+
+    <param name="text" type="String"/>
+
+    <UILabel
+        font="30 bold"
+        height="100%"
+        text="{text}"
+        textAlignment="center"
+        textColor="white"
+        width="100%"
+    />
+</UIView>
